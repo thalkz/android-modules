@@ -34,6 +34,7 @@ graph TB
     end
 
     :components:one:core --impl--> :platform:core
+    :components:two:core --impl--> :platform:core
 
     subgraph App
         :app
@@ -58,16 +59,15 @@ Executed tasks are verified using the `./gradlew assemble` command. To quickly s
 |                           | assemble  | bundle         | compile    | lint   |
 |---------------------------|-----------|----------------|------------|--------|
 | :app                      | x         |                | x          | x      |
-| :component:one:api        |           |                |            |        |
-| :component:one:bindings   |           |                | x          | x      |
-| :component:one:core       |           |                |            |        |
-| :component:one:lib        |           |                |            | x      |
-| :component:two:api        |           |                |            |        |
-| :component:two:bindings   |           |                | x          | x      |
-| :component:two:core       | x         | x              | x          | x      |
-| :component:two:lib        |           |                |            | x      |
+| :component:.one:api       |           |                |            |        |
+| :component:.one:bindings  |           |                | x          | x      |
+| :component:.one:core      |           |                |            |        |
+| :component:.one:lib       |           |                |            | x      |
+| :component:.two:api       |           |                |            |        |
+| :component:.two:bindings  |           |                | x          | x      |
+| :component:.two:core      | x         | x              | x          | x      |
+| :component:.two:lib       |           |                |            | x      |
 | :platform:core            | x         | x              | x          | x      |
-| ------------------------- | --------- | -------------- | ---------- | ------ |
 
 All re-run tasks (sorted, without lint):
 
@@ -142,16 +142,15 @@ All re-run tasks (sorted, without lint):
 |                           | assemble  | bundle         | compile    | lint   |
 |---------------------------|-----------|----------------|------------|--------|
 | :app                      | x         |                | x          | x      |
-| :component:one:api        |           |                |            |        |
-| :component:one:bindings   |           |                | x          | x      |
-| :component:one:core       | x         | x              | x          | x      |
-| :component:one:lib        |           |                |            | x      |
-| :component:two:api        |           |                |            |        |
-| :component:two:bindings   |           |                | x          | x      |
-| :component:two:core       |           |                | x          | x      |
-| :component:two:lib        |           |                |            | x      |
+| :component:.one:api       |           |                |            |        |
+| :component:.one:bindings  |           |                | x          | x      |
+| :component:.one:core      | x         | x              | x          | x      |
+| :component:.one:lib       |           |                |            | x      |
+| :component:.two:api       |           |                |            |        |
+| :component:.two:bindings  |           |                | x          | x      |
+| :component:.two:core      |           |                | x          | x      |
+| :component:.two:lib       |           |                |            | x      |
 | :platform:core            | x         | x              | x          | x      |
-| ------------------------- | --------- | -------------- | ---------- | ------ |
 
 Note that in both cases, the `lib` for components `one` and `two` were not neither assembled, bundled or compiled !
 Only `core` and `bindings` modules were affected (as well as `app`, of course).
