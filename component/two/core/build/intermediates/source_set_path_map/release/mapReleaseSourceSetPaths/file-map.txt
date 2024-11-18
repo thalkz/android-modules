@@ -1,0 +1,10 @@
+com.thalkz.component.two.core.lib.core-release-0 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.core.lib.core-release-1 /Users/roland/AndroidStudioProjects/Test/component/two/api/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.core.lib.core-pngs-2 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/generated/res/pngs/release
+com.thalkz.component.two.core.lib.core-resValues-3 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/generated/res/resValues/release
+com.thalkz.component.two.core.lib.core-mergeReleaseResources-4 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.component.two.core.lib.core-mergeReleaseResources-5 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.component.two.core.lib.core-release-6 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.component.two.core.lib.core-main-7 /Users/roland/AndroidStudioProjects/Test/component/two/core/src/main/res
+com.thalkz.component.two.core.lib.core-release-8 /Users/roland/AndroidStudioProjects/Test/component/two/core/src/release/res
+com.thalkz.component.two.core.lib.core-release-9 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/packaged_res/release/packageReleaseResources

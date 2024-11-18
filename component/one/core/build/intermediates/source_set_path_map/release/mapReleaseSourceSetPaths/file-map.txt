@@ -1,0 +1,9 @@
+com.thalkz.component.one.core.lib.core-release-0 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.one.core.lib.core-pngs-1 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/generated/res/pngs/release
+com.thalkz.component.one.core.lib.core-resValues-2 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/generated/res/resValues/release
+com.thalkz.component.one.core.lib.core-mergeReleaseResources-3 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.component.one.core.lib.core-mergeReleaseResources-4 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.component.one.core.lib.core-release-5 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.component.one.core.lib.core-main-6 /Users/roland/AndroidStudioProjects/Test/component/one/core/src/main/res
+com.thalkz.component.one.core.lib.core-release-7 /Users/roland/AndroidStudioProjects/Test/component/one/core/src/release/res
+com.thalkz.component.one.core.lib.core-release-8 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/packaged_res/release/packageReleaseResources

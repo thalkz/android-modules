@@ -1,0 +1,36 @@
+<libraries>
+  <library
+      name=":@@:platform:core::release"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/libs/R.jar"
+      resolved="Test.platform:core:unspecified"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":@@:component:one:api::release"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/libs/R.jar"
+      resolved="Test.component.one:api:unspecified"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
+      jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.0.0/b48df2c4aede9586cc931ead433bc02d6fd7879e/kotlin-stdlib-2.0.0.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:2.0.0"/>
+  <library
+      name="org.jetbrains:annotations:13.0@jar"
+      jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+      resolved="org.jetbrains:annotations:13.0"/>
+</libraries>

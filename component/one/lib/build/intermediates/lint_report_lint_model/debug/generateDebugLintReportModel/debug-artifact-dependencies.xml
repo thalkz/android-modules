@@ -1,0 +1,35 @@
+<dependencies>
+  <compile
+      roots=":@@:component:one:api::debug,:@@:component:one:core::debug,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:one:api::debug"
+        simpleName="artifacts::component:one:api"/>
+    <dependency
+        name=":@@:component:one:core::debug"
+        simpleName="artifacts::component:one:core"/>
+    <dependency
+        name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
+        simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
+    <dependency
+        name="org.jetbrains:annotations:13.0@jar"
+        simpleName="org.jetbrains:annotations"/>
+  </compile>
+  <package
+      roots=":@@:component:one:core::debug,:@@:component:one:api::debug,:@@:platform:core::debug,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:one:core::debug"
+        simpleName="artifacts::component:one:core"/>
+    <dependency
+        name=":@@:component:one:api::debug"
+        simpleName="artifacts::component:one:api"/>
+    <dependency
+        name=":@@:platform:core::debug"
+        simpleName="artifacts::platform:core"/>
+    <dependency
+        name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
+        simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
+    <dependency
+        name="org.jetbrains:annotations:13.0@jar"
+        simpleName="org.jetbrains:annotations"/>
+  </package>
+</dependencies>

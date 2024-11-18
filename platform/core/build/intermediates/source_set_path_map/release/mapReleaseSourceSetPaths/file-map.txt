@@ -1,0 +1,7 @@
+com.thalkz.foundation.core-pngs-0 /Users/roland/AndroidStudioProjects/Test/platform/core/build/generated/res/pngs/release
+com.thalkz.foundation.core-resValues-1 /Users/roland/AndroidStudioProjects/Test/platform/core/build/generated/res/resValues/release
+com.thalkz.foundation.core-mergeReleaseResources-2 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.foundation.core-mergeReleaseResources-3 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.foundation.core-release-4 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.foundation.core-main-5 /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/res
+com.thalkz.foundation.core-release-6 /Users/roland/AndroidStudioProjects/Test/platform/core/src/release/res

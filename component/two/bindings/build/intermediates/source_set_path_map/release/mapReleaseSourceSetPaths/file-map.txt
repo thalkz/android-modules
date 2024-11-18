@@ -1,0 +1,15 @@
+com.thalkz.component.two.bindings-release-0 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-1 /Users/roland/AndroidStudioProjects/Test/component/one/bindings/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-2 /Users/roland/AndroidStudioProjects/Test/component/one/core/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-3 /Users/roland/AndroidStudioProjects/Test/component/one/lib/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-4 /Users/roland/AndroidStudioProjects/Test/component/two/api/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-pngs-5 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/build/generated/res/pngs/release
+com.thalkz.component.two.bindings-resValues-6 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/build/generated/res/resValues/release
+com.thalkz.component.two.bindings-mergeReleaseResources-7 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.component.two.bindings-mergeReleaseResources-8 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.component.two.bindings-release-9 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.component.two.bindings-main-10 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/src/main/res
+com.thalkz.component.two.bindings-release-11 /Users/roland/AndroidStudioProjects/Test/component/two/bindings/src/release/res
+com.thalkz.component.two.bindings-release-12 /Users/roland/AndroidStudioProjects/Test/component/two/core/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-13 /Users/roland/AndroidStudioProjects/Test/component/two/lib/build/intermediates/packaged_res/release/packageReleaseResources
+com.thalkz.component.two.bindings-release-14 /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/packaged_res/release/packageReleaseResources

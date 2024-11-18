@@ -1,0 +1,1 @@
+com.thalkz.component.one.core.lib

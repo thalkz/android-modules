@@ -1,0 +1,7 @@
+com.thalkz.component.one.api-pngs-0 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/generated/res/pngs/release
+com.thalkz.component.one.api-resValues-1 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/generated/res/resValues/release
+com.thalkz.component.one.api-mergeReleaseResources-2 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.component.one.api-mergeReleaseResources-3 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.component.one.api-release-4 /Users/roland/AndroidStudioProjects/Test/component/one/api/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.component.one.api-main-5 /Users/roland/AndroidStudioProjects/Test/component/one/api/src/main/res
+com.thalkz.component.one.api-release-6 /Users/roland/AndroidStudioProjects/Test/component/one/api/src/release/res
