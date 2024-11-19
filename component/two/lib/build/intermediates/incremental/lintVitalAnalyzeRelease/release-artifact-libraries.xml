@@ -13,10 +13,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name=":@@:component:two:core::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/5916d11d2097ebc5e62caf0bda1d1863/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/5916d11d2097ebc5e62caf0bda1d1863/transformed/out/jars/libs/R.jar"
-      resolved="Test.component.two:core:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/5916d11d2097ebc5e62caf0bda1d1863/transformed/out"
+      name=":@@:component:one:api::release"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/libs/R.jar"
+      resolved="Test.component.one:api:unspecified"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -26,10 +26,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name=":@@:component:one:api::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out/jars/libs/R.jar"
-      resolved="Test.component.one:api:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/2b05c7eec11259b939cceec62eef2b4c/transformed/out"
+      name=":@@:component:one:lib::release"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out/jars/libs/R.jar"
+      resolved="Test.component.one:lib:unspecified"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -46,17 +46,4 @@
       name="org.jetbrains:annotations:13.0@jar"
       jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
       resolved="org.jetbrains:annotations:13.0"/>
-  <library
-      name=":@@:platform:core::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/libs/R.jar"
-      resolved="Test.platform:core:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
 </libraries>

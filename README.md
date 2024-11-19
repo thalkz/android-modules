@@ -21,14 +21,14 @@ graph TB
     end
     
     subgraph Components
-        :components:two:lib --impl--> :components:two:core
-        :components:two:lib --impl--> :components:one:lib
         :components:two:lib --impl--> :components:two:api
+        :components:two:lib --impl--> :components:one:lib
         :components:two:bindings --api--> :components:two:api
         :components:two:bindings --api--> :components:two:lib
+        :components:two:core --impl--> :components:two:lib
 
         :components:one:lib --impl--> :components:one:api
-        :components:one:lib --impl--> :components:one:core
+        :components:one:core --impl--> :components:one:lib
         :components:one:bindings --api--> :components:one:api
         :components:one:bindings --api--> :components:one:lib
     end
@@ -49,25 +49,25 @@ graph TB
 Executed tasks are verified using the `./gradlew assemble` command. To quickly see which tasks were re-executed, run:
 
 ```
-./gradlew assemble --console=plain | grep -E --invert-match "(UP-TO-DATE|NO-SOURCE|SKIPPED) | sort"
+./gradlew assemble --console=plain | grep -E --invert-match "(UP-TO-DATE|NO-SOURCE|SKIPPED)" | sort
 ```
 
 ## Results
 
 1) After renaming `Core::getItemTwo` to `Core::getItemTwoUpdated`
 
-|                           | assemble  | bundle         | compile    | lint   |
-|---------------------------|-----------|----------------|------------|--------|
-| :app                      | x         |                | x          | x      |
-| :component:.one:api       |           |                |            |        |
-| :component:.one:bindings  |           |                | x          | x      |
-| :component:.one:core      |           |                |            |        |
-| :component:.one:lib       |           |                |            | x      |
-| :component:.two:api       |           |                |            |        |
-| :component:.two:bindings  |           |                | x          | x      |
-| :component:.two:core      | x         | x              | x          | x      |
-| :component:.two:lib       |           |                |            | x      |
-| :platform:core            | x         | x              | x          | x      |
+|                          | assemble | bundle | compile | lint |
+|--------------------------|----------|--------|---------|------|
+| :app                     | x        |        | x       | x    |
+| :component:.one:api      |          |        |         |      |
+| :component:.one:bindings |          |        |         |      |
+| :component:.one:core     |          |        | x       | x    |
+| :component:.one:lib      |          |        |         |      |
+| :component:.two:api      |          |        |         |      |
+| :component:.two:bindings |          |        |         |      |
+| :component:.two:core     | x        | x      | x       | x    |
+| :component:.two:lib      |          |        |         |      |
+| :platform:core           | x        | x      | x       | x    |
 
 All re-run tasks (sorted, without lint):
 
@@ -78,25 +78,21 @@ All re-run tasks (sorted, without lint):
 > Task :app:compileDebugKotlin
 > Task :app:compileReleaseArtProfile
 > Task :app:compileReleaseKotlin
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalRelease
 > Task :app:mergeDexRelease
 > Task :app:mergeLibDexDebug
 > Task :app:packageDebug
 > Task :app:packageRelease
 
-> Task :component:one:bindings:compileDebugKotlin
-> Task :component:one:bindings:compileReleaseKotlin
-> Task :component:one:bindings:extractDebugAnnotations
-> Task :component:one:bindings:extractReleaseAnnotations
-
 > Task :component:one:core:compileDebugKotlin
 > Task :component:one:core:compileReleaseKotlin
 > Task :component:one:core:extractDebugAnnotations
 > Task :component:one:core:extractReleaseAnnotations
-
-> Task :component:two:bindings:compileDebugKotlin
-> Task :component:two:bindings:compileReleaseKotlin
-> Task :component:two:bindings:extractDebugAnnotations
-> Task :component:two:bindings:extractReleaseAnnotations
+> Task :component:one:core:generateReleaseLintModel
+> Task :component:one:core:generateReleaseLintVitalModel
+> Task :component:one:core:lintVitalAnalyzeRelease
 
 > Task :component:two:core:assemble
 > Task :component:two:core:assembleDebug
@@ -109,11 +105,15 @@ All re-run tasks (sorted, without lint):
 > Task :component:two:core:bundleLibRuntimeToJarDebug
 > Task :component:two:core:bundleLibRuntimeToJarRelease
 > Task :component:two:core:bundleReleaseAar
+> Task :component:two:core:bundleReleaseLocalLintAar
 > Task :component:two:core:compileDebugKotlin
 > Task :component:two:core:compileReleaseKotlin
 > Task :component:two:core:createFullJarRelease
 > Task :component:two:core:extractDebugAnnotations
 > Task :component:two:core:extractReleaseAnnotations
+> Task :component:two:core:generateReleaseLintModel
+> Task :component:two:core:generateReleaseLintVitalModel
+> Task :component:two:core:lintVitalAnalyzeRelease
 > Task :component:two:core:syncDebugLibJars
 > Task :component:two:core:syncReleaseLibJars
 
@@ -128,29 +128,33 @@ All re-run tasks (sorted, without lint):
 > Task :platform:core:bundleLibRuntimeToJarDebug
 > Task :platform:core:bundleLibRuntimeToJarRelease
 > Task :platform:core:bundleReleaseAar
+> Task :platform:core:bundleReleaseLocalLintAar
 > Task :platform:core:compileDebugKotlin
 > Task :platform:core:compileReleaseKotlin
 > Task :platform:core:createFullJarRelease
 > Task :platform:core:extractDebugAnnotations
 > Task :platform:core:extractReleaseAnnotations
+> Task :platform:core:generateReleaseLintModel
+> Task :platform:core:generateReleaseLintVitalModel
+> Task :platform:core:lintVitalAnalyzeRelease
 > Task :platform:core:syncDebugLibJars
 > Task :platform:core:syncReleaseLibJars
 ```
 
 2) After renaming `Core::getItemOne` to `Core::getItemOneUpdated`: (RepositoryOne is use in RepositoryTwo)
 
-|                           | assemble  | bundle         | compile    | lint   |
-|---------------------------|-----------|----------------|------------|--------|
-| :app                      | x         |                | x          | x      |
-| :component:.one:api       |           |                |            |        |
-| :component:.one:bindings  |           |                | x          | x      |
-| :component:.one:core      | x         | x              | x          | x      |
-| :component:.one:lib       |           |                |            | x      |
-| :component:.two:api       |           |                |            |        |
-| :component:.two:bindings  |           |                | x          | x      |
-| :component:.two:core      |           |                | x          | x      |
-| :component:.two:lib       |           |                |            | x      |
-| :platform:core            | x         | x              | x          | x      |
+|                          | assemble | bundle | compile | lint |
+|--------------------------|----------|--------|---------|------|
+| :app                     | x        |        | x       | x    |
+| :component:.one:api      |          |        |         |      |
+| :component:.one:bindings |          |        |         |      |
+| :component:.one:core     | x        | x      | x       | x    |
+| :component:.one:lib      |          |        |         |      |
+| :component:.two:api      |          |        |         |      |
+| :component:.two:bindings |          |        |         |      |
+| :component:.two:core     |          |        | x       | x    |
+| :component:.two:lib      |          |        |         |      |
+| :platform:core           | x        | x      | x       | x    |
 
 Note that in both cases, the `lib` for components `one` and `two` were not neither assembled, bundled or compiled !
 Only `core` and `bindings` modules were affected (as well as `app`, of course).
@@ -164,15 +168,13 @@ All re-run tasks (sorted, without lint):
 > Task :app:compileDebugKotlin
 > Task :app:compileReleaseArtProfile
 > Task :app:compileReleaseKotlin
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalRelease
 > Task :app:mergeDexRelease
 > Task :app:mergeLibDexDebug
 > Task :app:packageDebug
 > Task :app:packageRelease
-
-> Task :component:one:bindings:compileDebugKotlin
-> Task :component:one:bindings:compileReleaseKotlin
-> Task :component:one:bindings:extractDebugAnnotations
-> Task :component:one:bindings:extractReleaseAnnotations
 
 > Task :component:one:core:assemble
 > Task :component:one:core:assembleDebug
@@ -185,23 +187,25 @@ All re-run tasks (sorted, without lint):
 > Task :component:one:core:bundleLibRuntimeToJarDebug
 > Task :component:one:core:bundleLibRuntimeToJarRelease
 > Task :component:one:core:bundleReleaseAar
+> Task :component:one:core:bundleReleaseLocalLintAar
 > Task :component:one:core:compileDebugKotlin
 > Task :component:one:core:compileReleaseKotlin
 > Task :component:one:core:createFullJarRelease
 > Task :component:one:core:extractDebugAnnotations
 > Task :component:one:core:extractReleaseAnnotations
+> Task :component:one:core:generateReleaseLintModel
+> Task :component:one:core:generateReleaseLintVitalModel
+> Task :component:one:core:lintVitalAnalyzeRelease
 > Task :component:one:core:syncDebugLibJars
 > Task :component:one:core:syncReleaseLibJars
-
-> Task :component:two:bindings:compileDebugKotlin
-> Task :component:two:bindings:compileReleaseKotlin
-> Task :component:two:bindings:extractDebugAnnotations
-> Task :component:two:bindings:extractReleaseAnnotations
 
 > Task :component:two:core:compileDebugKotlin
 > Task :component:two:core:compileReleaseKotlin
 > Task :component:two:core:extractDebugAnnotations
 > Task :component:two:core:extractReleaseAnnotations
+> Task :component:two:core:generateReleaseLintModel
+> Task :component:two:core:generateReleaseLintVitalModel
+> Task :component:two:core:lintVitalAnalyzeRelease
 
 > Task :platform:core:assemble
 > Task :platform:core:assembleDebug
@@ -214,11 +218,15 @@ All re-run tasks (sorted, without lint):
 > Task :platform:core:bundleLibRuntimeToJarDebug
 > Task :platform:core:bundleLibRuntimeToJarRelease
 > Task :platform:core:bundleReleaseAar
+> Task :platform:core:bundleReleaseLocalLintAar
 > Task :platform:core:compileDebugKotlin
 > Task :platform:core:compileReleaseKotlin
 > Task :platform:core:createFullJarRelease
 > Task :platform:core:extractDebugAnnotations
 > Task :platform:core:extractReleaseAnnotations
+> Task :platform:core:generateReleaseLintModel
+> Task :platform:core:generateReleaseLintVitalModel
+> Task :platform:core:lintVitalAnalyzeRelease
 > Task :platform:core:syncDebugLibJars
 > Task :platform:core:syncReleaseLibJars
 ```

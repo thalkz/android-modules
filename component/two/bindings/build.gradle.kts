@@ -25,11 +25,6 @@ dependencies {
     api(project(":component:two:api"))
     api(project(":component:two:lib"))
 
-    implementation(project(":component:two:core"))
-
-    // Necessary here only because there is no dependency injection framework
-    // With Hilt, there will be no need for this dependency
-    implementation(project(":component:one:bindings"))
-
-    implementation(project(":platform:core"))
+    implementation(project(":component:one:lib"))
+    implementation(project(":platform:di"))
 }

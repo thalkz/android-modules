@@ -3,9 +3,6 @@
       name=":@@:component:one:api::release"
       project=":component:one:api"/>
   <library
-      name=":@@:component:one:core::release"
-      project=":component:one:core"/>
-  <library
       name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
       jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.0.0/b48df2c4aede9586cc931ead433bc02d6fd7879e/kotlin-stdlib-2.0.0.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib:2.0.0"/>
@@ -13,7 +10,4 @@
       name="org.jetbrains:annotations:13.0@jar"
       jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
       resolved="org.jetbrains:annotations:13.0"/>
-  <library
-      name=":@@:platform:core::release"
-      project=":platform:core"/>
 </libraries>

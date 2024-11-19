@@ -5,7 +5,7 @@ data class CoreItemOne(val value: String)
 data class CoreItemTwo(val value: String)
 
 class Core {
-    fun getCoreOneNew(): CoreItemOne {
+    fun getCoreOne(): CoreItemOne {
         return CoreItemOne("1")
     }
 

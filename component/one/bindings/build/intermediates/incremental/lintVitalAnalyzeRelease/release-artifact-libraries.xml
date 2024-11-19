@@ -14,9 +14,9 @@
       proguardRules="proguard.txt"/>
   <library
       name=":@@:component:one:lib::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/d1319d35f0c47c49198b2404081b20d6/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/d1319d35f0c47c49198b2404081b20d6/transformed/out/jars/libs/R.jar"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out/jars/libs/R.jar"
       resolved="Test.component.one:lib:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/d1319d35f0c47c49198b2404081b20d6/transformed/out"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/c43d2451fa2b1cc3d353f02887cfa882/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -26,23 +26,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name=":@@:component:one:core::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/d02ffe43b95301ee32083f8ccd3db8e5/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/d02ffe43b95301ee32083f8ccd3db8e5/transformed/out/jars/libs/R.jar"
-      resolved="Test.component.one:core:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/d02ffe43b95301ee32083f8ccd3db8e5/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name=":@@:platform:core::release"
-      jars="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out/jars/libs/R.jar"
-      resolved="Test.platform:core:unspecified"
-      folder="/Users/roland/.gradle/caches/8.9/transforms/420b4c46593c3c304d7016755efdb5ac/transformed/out"
+      name=":@@:platform:di::release"
+      jars="/Users/roland/.gradle/caches/8.9/transforms/d92f5f616d6fbc063f4e32bb8f9e6b74/transformed/out/jars/classes.jar:/Users/roland/.gradle/caches/8.9/transforms/d92f5f616d6fbc063f4e32bb8f9e6b74/transformed/out/jars/libs/R.jar"
+      resolved="Test.platform:di:unspecified"
+      folder="/Users/roland/.gradle/caches/8.9/transforms/d92f5f616d6fbc063f4e32bb8f9e6b74/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

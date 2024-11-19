@@ -1,12 +1,18 @@
 <dependencies>
   <compile
-      roots=":@@:platform:core::release,:@@:component:two:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:two:api::release,:@@:component:two:lib::release,:@@:platform:core::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:two:api::release"
+        simpleName="artifacts::component:two:api"/>
+    <dependency
+        name=":@@:component:two:lib::release"
+        simpleName="artifacts::component:two:lib"/>
     <dependency
         name=":@@:platform:core::release"
         simpleName="artifacts::platform:core"/>
     <dependency
-        name=":@@:component:two:api::release"
-        simpleName="artifacts::component:two:api"/>
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -15,13 +21,22 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots=":@@:platform:core::release,:@@:component:two:api::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:two:lib::release,:@@:component:two:api::release,:@@:platform:core::release,:@@:platform:di::release,:@@:component:one:lib::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:two:lib::release"
+        simpleName="artifacts::component:two:lib"/>
+    <dependency
+        name=":@@:component:two:api::release"
+        simpleName="artifacts::component:two:api"/>
     <dependency
         name=":@@:platform:core::release"
         simpleName="artifacts::platform:core"/>
     <dependency
-        name=":@@:component:two:api::release"
-        simpleName="artifacts::component:two:api"/>
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
+    <dependency
+        name=":@@:component:one:lib::release"
+        simpleName="artifacts::component:one:lib"/>
     <dependency
         name=":@@:component:one:api::release"
         simpleName="artifacts::component:one:api"/>

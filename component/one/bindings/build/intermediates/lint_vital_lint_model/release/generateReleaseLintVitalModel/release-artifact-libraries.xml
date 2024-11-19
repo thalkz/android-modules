@@ -6,11 +6,8 @@
       name=":@@:component:one:lib::release"
       project=":component:one:lib"/>
   <library
-      name=":@@:component:one:core::release"
-      project=":component:one:core"/>
-  <library
-      name=":@@:platform:core::release"
-      project=":platform:core"/>
+      name=":@@:platform:di::release"
+      project=":platform:di"/>
   <library
       name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
       jars="/Users/roland/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.0.0/b48df2c4aede9586cc931ead433bc02d6fd7879e/kotlin-stdlib-2.0.0.jar"

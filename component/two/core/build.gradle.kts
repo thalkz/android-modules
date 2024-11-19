@@ -23,5 +23,7 @@ android {
 
 dependencies {
     implementation(project(":component:two:api"))
+    implementation(project(":component:two:lib"))
     implementation(project(":platform:core"))
+    implementation(project(":platform:di"))
 }

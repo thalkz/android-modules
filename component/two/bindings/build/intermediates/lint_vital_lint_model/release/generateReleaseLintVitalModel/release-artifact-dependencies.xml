@@ -1,6 +1,6 @@
 <dependencies>
   <compile
-      roots=":@@:component:two:api::release,:@@:component:two:lib::release,:@@:component:two:core::release,:@@:platform:core::release,:@@:component:one:bindings::release,:@@:component:one:api::release,:@@:component:one:lib::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:two:api::release,:@@:component:two:lib::release,:@@:component:one:lib::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:two:api::release"
         simpleName="artifacts::component:two:api"/>
@@ -8,20 +8,11 @@
         name=":@@:component:two:lib::release"
         simpleName="artifacts::component:two:lib"/>
     <dependency
-        name=":@@:component:two:core::release"
-        simpleName="artifacts::component:two:core"/>
-    <dependency
-        name=":@@:platform:core::release"
-        simpleName="artifacts::platform:core"/>
-    <dependency
-        name=":@@:component:one:bindings::release"
-        simpleName="artifacts::component:one:bindings"/>
-    <dependency
-        name=":@@:component:one:api::release"
-        simpleName="artifacts::component:one:api"/>
-    <dependency
         name=":@@:component:one:lib::release"
         simpleName="artifacts::component:one:lib"/>
+    <dependency
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -30,28 +21,19 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots=":@@:component:two:lib::release,:@@:component:two:core::release,:@@:component:two:api::release,:@@:component:one:bindings::release,:@@:component:one:lib::release,:@@:component:one:core::release,:@@:platform:core::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:two:lib::release,:@@:component:two:api::release,:@@:component:one:lib::release,:@@:platform:di::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:two:lib::release"
         simpleName="artifacts::component:two:lib"/>
     <dependency
-        name=":@@:component:two:core::release"
-        simpleName="artifacts::component:two:core"/>
-    <dependency
         name=":@@:component:two:api::release"
         simpleName="artifacts::component:two:api"/>
-    <dependency
-        name=":@@:component:one:bindings::release"
-        simpleName="artifacts::component:one:bindings"/>
     <dependency
         name=":@@:component:one:lib::release"
         simpleName="artifacts::component:one:lib"/>
     <dependency
-        name=":@@:component:one:core::release"
-        simpleName="artifacts::component:one:core"/>
-    <dependency
-        name=":@@:platform:core::release"
-        simpleName="artifacts::platform:core"/>
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
     <dependency
         name=":@@:component:one:api::release"
         simpleName="artifacts::component:one:api"/>

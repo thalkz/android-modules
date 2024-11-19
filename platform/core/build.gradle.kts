@@ -22,4 +22,5 @@ android {
 }
 
 dependencies {
+    implementation(project(":platform:di"))
 }

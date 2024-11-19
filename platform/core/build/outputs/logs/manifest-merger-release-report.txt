@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml:2:1-4:12
-INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml:2:1-4:12
+ADDED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml:2:13-83
+INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml:2:13-83
 	package
-		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml
 	xmlns:android
-		ADDED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml:2:23-81
 uses-sdk
-INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml
-INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml
+INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml reason: use-sdk injection requested
+INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml
+INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml
 	android:targetSdkVersion
-		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml
 	android:minSdkVersion
-		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/roland/AndroidStudioProjects/Test/platform/core/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest5108449726916124195.xml

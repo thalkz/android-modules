@@ -1,20 +1,14 @@
 package com.thalkz.component.one.bindings
 
 import com.thalkz.component.one.OneRepository
-import com.thalkz.component.one.core.OneService
 import com.thalkz.component.one.lib.DefaultOneRepository
-import com.thalkz.foundation.core.CoreModule
+import com.thalkz.component.one.lib.OneService
+import com.thalkz.platform.di.Bindings
+import com.thalkz.platform.di.Module
+import com.thalkz.platform.di.provide
 
-object OneModule {
-    val service = OneService(
-        core = CoreModule.provideCore()
-    )
-
-    val repository = DefaultOneRepository(
-        service = provideOneService()
-    )
-
-    fun provideOneRepository(): OneRepository = repository
-
-    fun provideOneService(): OneService = service
+object OneModule : Module {
+    override fun inject() {
+        Bindings.provide<OneRepository, OneService> { service -> DefaultOneRepository(service) }
+    }
 }

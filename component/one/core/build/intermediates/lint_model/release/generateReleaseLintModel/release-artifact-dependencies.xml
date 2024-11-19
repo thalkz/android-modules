@@ -1,12 +1,18 @@
 <dependencies>
   <compile
-      roots=":@@:platform:core::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:one:api::release,:@@:component:one:lib::release,:@@:platform:core::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:one:api::release"
+        simpleName="artifacts::component:one:api"/>
+    <dependency
+        name=":@@:component:one:lib::release"
+        simpleName="artifacts::component:one:lib"/>
     <dependency
         name=":@@:platform:core::release"
         simpleName="artifacts::platform:core"/>
     <dependency
-        name=":@@:component:one:api::release"
-        simpleName="artifacts::component:one:api"/>
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -15,13 +21,19 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots=":@@:platform:core::release,:@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:one:lib::release,:@@:component:one:api::release,:@@:platform:core::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:component:one:lib::release"
+        simpleName="artifacts::component:one:lib"/>
+    <dependency
+        name=":@@:component:one:api::release"
+        simpleName="artifacts::component:one:api"/>
     <dependency
         name=":@@:platform:core::release"
         simpleName="artifacts::platform:core"/>
     <dependency
-        name=":@@:component:one:api::release"
-        simpleName="artifacts::component:one:api"/>
+        name=":@@:platform:di::release"
+        simpleName="artifacts::platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>

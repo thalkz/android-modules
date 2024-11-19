@@ -1,6 +1,6 @@
 <dependencies>
   <compile
-      roots=":@@:component:one:api::release,:@@:component:one:lib::release,:@@:component:one:core::release,:@@:platform:core::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:one:api::release,:@@:component:one:lib::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:one:api::release"
         simpleName="Test.component.one:api"/>
@@ -8,11 +8,8 @@
         name=":@@:component:one:lib::release"
         simpleName="Test.component.one:lib"/>
     <dependency
-        name=":@@:component:one:core::release"
-        simpleName="Test.component.one:core"/>
-    <dependency
-        name=":@@:platform:core::release"
-        simpleName="Test.platform:core"/>
+        name=":@@:platform:di::release"
+        simpleName="Test.platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -21,19 +18,16 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots=":@@:component:one:lib::release,:@@:component:one:core::release,:@@:component:one:api::release,:@@:platform:core::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:one:lib::release,:@@:component:one:api::release,:@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:one:lib::release"
         simpleName="Test.component.one:lib"/>
     <dependency
-        name=":@@:component:one:core::release"
-        simpleName="Test.component.one:core"/>
-    <dependency
         name=":@@:component:one:api::release"
         simpleName="Test.component.one:api"/>
     <dependency
-        name=":@@:platform:core::release"
-        simpleName="Test.platform:core"/>
+        name=":@@:platform:di::release"
+        simpleName="Test.platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>

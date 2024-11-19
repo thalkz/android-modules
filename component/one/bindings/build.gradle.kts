@@ -25,6 +25,5 @@ dependencies {
     api(project(":component:one:api"))
     api(project(":component:one:lib"))
 
-    implementation(project(":component:one:core"))
-    implementation(project(":platform:core"))
+    implementation(project(":platform:di"))
 }

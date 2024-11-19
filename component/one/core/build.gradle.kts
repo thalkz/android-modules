@@ -23,5 +23,7 @@ android {
 
 dependencies {
     implementation(project(":component:one:api"))
+    implementation(project(":component:one:lib"))
     implementation(project(":platform:core"))
+    implementation(project(":platform:di"))
 }

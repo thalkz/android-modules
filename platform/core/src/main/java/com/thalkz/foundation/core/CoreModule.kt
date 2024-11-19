@@ -1,8 +1,12 @@
 package com.thalkz.foundation.core
 
-object CoreModule {
-    private val core = Core()
+import com.thalkz.platform.di.Bindings
+import com.thalkz.platform.di.Module
+import com.thalkz.platform.di.provide
 
-    fun provideCore(): Core = core
+object CoreModule : Module {
+    override fun inject() {
+        Bindings.provide<Core> { Core() }
+    }
 }
 

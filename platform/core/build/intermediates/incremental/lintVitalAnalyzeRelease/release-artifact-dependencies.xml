@@ -1,6 +1,9 @@
 <dependencies>
   <compile
-      roots="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:platform:di::release"
+        simpleName="Test.platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -9,7 +12,10 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:platform:di::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+    <dependency
+        name=":@@:platform:di::release"
+        simpleName="Test.platform:di"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>

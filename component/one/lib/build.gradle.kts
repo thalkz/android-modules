@@ -23,5 +23,4 @@ android {
 
 dependencies {
     implementation(project(":component:one:api"))
-    implementation(project(":component:one:core"))
 }

@@ -1,0 +1,7 @@
+com.thalkz.platform.di-pngs-0 /Users/roland/AndroidStudioProjects/Test/platform/di/build/generated/res/pngs/release
+com.thalkz.platform.di-resValues-1 /Users/roland/AndroidStudioProjects/Test/platform/di/build/generated/res/resValues/release
+com.thalkz.platform.di-mergeReleaseResources-2 /Users/roland/AndroidStudioProjects/Test/platform/di/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.thalkz.platform.di-mergeReleaseResources-3 /Users/roland/AndroidStudioProjects/Test/platform/di/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.thalkz.platform.di-release-4 /Users/roland/AndroidStudioProjects/Test/platform/di/build/intermediates/merged_res/release/mergeReleaseResources
+com.thalkz.platform.di-main-5 /Users/roland/AndroidStudioProjects/Test/platform/di/src/main/res
+com.thalkz.platform.di-release-6 /Users/roland/AndroidStudioProjects/Test/platform/di/src/release/res

@@ -23,7 +23,6 @@ android {
 
 dependencies {
     implementation(project(":component:two:api"))
-    implementation(project(":component:two:core"))
-
     implementation(project(":component:one:api"))
+    implementation(project(":component:one:lib"))
 }

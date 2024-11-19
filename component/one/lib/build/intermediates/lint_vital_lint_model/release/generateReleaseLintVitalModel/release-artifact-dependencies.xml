@@ -1,12 +1,9 @@
 <dependencies>
   <compile
-      roots=":@@:component:one:api::release,:@@:component:one:core::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
+      roots=":@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:one:api::release"
         simpleName="artifacts::component:one:api"/>
-    <dependency
-        name=":@@:component:one:core::release"
-        simpleName="artifacts::component:one:core"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
@@ -15,16 +12,10 @@
         simpleName="org.jetbrains:annotations"/>
   </compile>
   <package
-      roots=":@@:component:one:core::release,:@@:component:one:api::release,:@@:platform:core::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
-    <dependency
-        name=":@@:component:one:core::release"
-        simpleName="artifacts::component:one:core"/>
+      roots=":@@:component:one:api::release,org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar,org.jetbrains:annotations:13.0@jar">
     <dependency
         name=":@@:component:one:api::release"
         simpleName="artifacts::component:one:api"/>
-    <dependency
-        name=":@@:platform:core::release"
-        simpleName="artifacts::platform:core"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>

@@ -41,8 +41,11 @@ dependencies {
     implementation(libs.androidx.material3)
 
     implementation(project(":component:one:bindings"))
+    implementation(project(":component:one:core"))
     implementation(project(":component:two:bindings"))
+    implementation(project(":component:two:core"))
     implementation(project(":platform:core"))
+    implementation(project(":platform:di"))
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)

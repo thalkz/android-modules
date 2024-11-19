@@ -1,22 +1,21 @@
 package com.thalkz.component.two.lib
 
 import com.thalkz.component.one.ItemOne
-import com.thalkz.component.one.OneRepository
+import com.thalkz.component.one.lib.OneService
 import com.thalkz.component.two.ItemTwo
 import com.thalkz.component.two.TwoRepository
-import com.thalkz.component.two.core.TwoService
 
 class DefaultTwoRepository(
-    val service: TwoService,
-    val oneRepository: OneRepository,
+    val oneService: OneService,
+    val twoService: TwoService,
 ) : TwoRepository {
 
     override fun getTwo(): ItemTwo {
-        return service.getTwo()
+        return twoService.getTwo()
     }
 
     override fun getOneAndTwo(): Pair<ItemOne, ItemTwo> {
-        val one = oneRepository.getOne()
+        val one = oneService.getOne()
         val two = getTwo()
         return one to two
     }

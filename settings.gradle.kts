@@ -34,3 +34,4 @@ include(":component:two:core")
 include(":component:two:lib")
 
 include("platform:core")
+include("platform:di")
