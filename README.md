@@ -49,7 +49,7 @@ graph TB
 Executed tasks are verified using the `./gradlew assemble` command. To quickly see which tasks were re-executed, run:
 
 ```
-./gradlew assemble --console=plain | grep -E --invert-match "(UP-TO-DATE|NO-SOURCE|SKIPPED) | sort"
+./gradlew :app:assemble --console=plain | grep -E --invert-match "(UP-TO-DATE|NO-SOURCE|SKIPPED)" | sort
 ```
 
 ## Results
